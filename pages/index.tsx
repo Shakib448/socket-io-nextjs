@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, useEffect, useRef } from "react";
 import SocketIOClient from "socket.io-client";
 import tw from "twin.macro";
