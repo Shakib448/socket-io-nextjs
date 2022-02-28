@@ -1,4 +1,5 @@
 // @ts-nocheck
+import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import SocketIOClient from "socket.io-client";
 import tw from "twin.macro";
@@ -73,6 +74,11 @@ const Index: React.FC = () => {
     <div tw="flex flex-col w-full h-screen">
       <div tw="py-4 text-white  bg-blue-500 sticky top-0">
         <h1 tw="text-center text-2xl font-semibold">Realtime Chat App</h1>
+        <Link href="/testing" passHref>
+          <h1 tw="text-center text-2xl font-semibold cursor-pointer">
+            Testing
+          </h1>
+        </Link>
         <h2 tw="mt-2 text-center">in Next.js and Socket.io</h2>
       </div>
       <div tw="flex flex-col flex-1 bg-gray-200">
